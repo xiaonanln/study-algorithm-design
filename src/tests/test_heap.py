@@ -18,7 +18,8 @@ class TestHeap(unittest.TestCase):
 			self.assertEqual(heapsize, len(sorting))
 			self.checkSorted(sorting)
 
-	def checkSorted(self, list):
+	@staticmethod
+	def checkSorted(list):
 		lastVal = None
 		for v in list:
 			if lastVal is not None:
