@@ -6,6 +6,8 @@ import unittest
 from ch2.InsertionSort import InsertionSort
 from ch2.SelectionSort import SelectionSort
 from ch4.HeapSort import HeapSort
+from ch4.MergeSort import MergeSort
+from ch4.QuickSort import QuickSort
 
 class TestSort(unittest.TestCase):
 	def testInsertionSort(self):
@@ -17,8 +19,14 @@ class TestSort(unittest.TestCase):
 	def testHeapSort(self):
 		self._testSort(HeapSort)
 
+	def testMergeSort(self):
+		self._testSort(MergeSort)
+
+	def testQuickSort(self):
+		self._testSort(QuickSort)
+
 	def genRandomList(self, length):
-		return [ random.randint(1, 100) for _ in xrange(length)]
+		return [ random.randint(1, length*10) for _ in xrange(length)]
 
 	def _testSort(self, sorterClass):
 		print '====================================================================================================='
