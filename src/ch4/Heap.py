@@ -1,7 +1,7 @@
 
 def Heapify(list):
-	for i in xrange(0, len(list)):
-		moveup(list, i)
+	for i in xrange(len(list)-1, -1, -1): # len(list)-1 ~ 0
+		movedown(list, i)
 
 def Pop(heap):
 	minval = heap[0]
