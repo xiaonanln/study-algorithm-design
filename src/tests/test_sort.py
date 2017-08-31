@@ -8,6 +8,7 @@ from ch2.SelectionSort import SelectionSort
 from ch4.HeapSort import HeapSort
 from ch4.MergeSort import MergeSort
 from ch4.QuickSort import QuickSort
+from ch4.ShellSort import ShellSort
 
 class TestSort(unittest.TestCase):
 	def testInsertionSort(self):
@@ -25,13 +26,16 @@ class TestSort(unittest.TestCase):
 	def testQuickSort(self):
 		self._testSort(QuickSort)
 
+	def testShellSort(self):
+		self._testSort(ShellSort)
+
 	def genRandomList(self, length):
 		return [ random.randint(1, length*10) for _ in xrange(length)]
 
 	def _testSort(self, sorterClass):
 		print '====================================================================================================='
 		for length in (1000, 2000, 4000, 8000, 10000, 100000):
-			if length >= 5000 and sorterClass in (InsertionSort, SelectionSort):
+			if length >= 5000 and sorterClass in (InsertionSort, SelectionSort, ShellSort):
 				continue
 
 			list = self.genRandomList(length)
