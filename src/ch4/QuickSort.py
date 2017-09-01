@@ -19,20 +19,28 @@ def quicksort(list, l, h):
 	if h <= l+1:
 		return
 
+	# print l, h
 
 	pivot = list[h-1]
-	firsthigh = l
-	for i in xrange(l, h-1):
-		if list[i] < pivot:
-			list[i], list[firsthigh] = list[firsthigh], list[i]
-			firsthigh += 1
+	sm, la = l, h-2
+	while True:
+		while list[sm] < pivot:
+			sm += 1
 
-	list[h-1], list[firsthigh] = list[firsthigh], list[h-1]
+		while la >= 0 and list[la] >= pivot:
+			la -= 1
 
-	# print firsthigh-l, h-firsthigh-1, '|',
-	# print list[l:firsthigh], list[firsthigh], list[firsthigh+1:]
-	quicksort(list, l, firsthigh)
-	quicksort(list, firsthigh+1, h)
+		if sm > la:
+			break
+
+		list[la], list[sm] = list[sm], list[la]
+		sm += 1
+		la -= 1
+
+	list[sm], list[h-1] = list[h-1], list[sm]
+	quicksort(list, l, sm)
+	quicksort(list, sm+1, h)
+
 
 if __name__ == '__main__':
 	list = range(100)

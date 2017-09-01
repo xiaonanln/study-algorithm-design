@@ -9,6 +9,7 @@ from ch4.HeapSort import HeapSort
 from ch4.MergeSort import MergeSort
 from ch4.QuickSort import QuickSort
 from ch4.ShellSort import ShellSort
+from ch4.RadixSort import RadixSort
 
 class TestSort(unittest.TestCase):
 	def testInsertionSort(self):
@@ -28,6 +29,10 @@ class TestSort(unittest.TestCase):
 
 	def testShellSort(self):
 		self._testSort(ShellSort)
+
+	def testRadixSort(self):
+		self._testSort(RadixSort)
+
 
 	def genRandomList(self, length):
 		return [ random.randint(1, length*10) for _ in xrange(length)]
