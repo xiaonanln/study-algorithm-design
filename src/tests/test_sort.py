@@ -8,6 +8,7 @@ from ch2.SelectionSort import SelectionSort
 from ch4.HeapSort import HeapSort
 from ch4.MergeSort import MergeSort
 from ch4.QuickSort import QuickSort
+from ch4.QuickSortW3 import QuickSortW3
 from ch4.ShellSort import ShellSort
 from ch4.RadixSortLSD import RadixSortLSD
 
@@ -27,6 +28,9 @@ class TestSort(unittest.TestCase):
 	def testQuickSort(self):
 		self._testSort(QuickSort)
 
+	def testQuickSortW3(self):
+		self._testSort(QuickSortW3)
+
 	def testShellSort(self):
 		self._testSort(ShellSort)
 
@@ -35,7 +39,7 @@ class TestSort(unittest.TestCase):
 
 
 	def genRandomList(self, length):
-		return [ random.randint(1, length*10) for _ in xrange(length)]
+		return [ random.randint(1, length//50) for _ in xrange(length)]
 
 	def _testSort(self, sorterClass):
 		print '====================================================================================================='
