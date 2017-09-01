@@ -5,10 +5,18 @@ Write code to study 《The Algorithm Design Manual》
 # Data structures to be implemented
 
 ## Sorting
-* 3-way Quick Sort
-* Radix Sort
+- [x] Insertion Sort
+- [x] Selection Sort
+- [x] Heap Sort
+- [x] Merge Sort
+- [x] Quick Sort
+- [x] 3-Way Quick Sort
+- [x] Radix Sort
+- [x] Shell Sort
 
-## Trees
-Trie
+## Tree
+- [ ] Trie
 
 ## Graph
+- [ ]DFS
+- [ ]BFS
