@@ -1,5 +1,5 @@
 
-class RadixSort(object):
+class RadixSortLSD(object):
 	def __init__(self, list):
 		self.list = list
 
@@ -27,7 +27,7 @@ class RadixSort(object):
 
 if __name__ == '__main__':
 	list = [1,2,100,200,3,4]
-	RadixSort(list).sort()
+	RadixSortLSD(list).sort()
 	print list
 
 

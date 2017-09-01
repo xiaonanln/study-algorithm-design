@@ -7,3 +7,8 @@ Write code to study 《The Algorithm Design Manual》
 ## Sorting
 * 3-way Quick Sort
 * Radix Sort
+
+## Trees
+Trie
+
+## Graph
