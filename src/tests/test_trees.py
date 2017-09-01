@@ -24,6 +24,7 @@ class TestTrees(unittest.TestCase):
 			sys.stdout.write('\n')
 			BinaryTree.PreOrder(root, lambda val: val)
 			BinaryTree.PostOrder(root, lambda val: val)
+			BinaryTree.ByDepthOrder(root, lambda val: val)
 
 			vals = list(vals)
 			random.shuffle(vals)

@@ -15,8 +15,10 @@ Write code to study 《The Algorithm Design Manual》
 - [x] Shell Sort
 
 ## Tree
+
 - [ ] Trie
 
 ## Graph
+
 - [ ]DFS
 - [ ]BFS

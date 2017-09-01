@@ -1,4 +1,4 @@
-
+from collections import deque
 
 class TreeNode(object):
 	__slots__ = ('val', 'left', 'right', 'parent')
@@ -85,6 +85,18 @@ def PostOrder(root, f):
 	PostOrder(root.right, f)
 	f(root.val)
 
+def ByDepthOrder(root, f):
+	if not root:
+		return
 
+	q = deque()
+	q.append(root)
+	while q:
+		node = q.popleft()
+		f(node.val)
 
+		if node.left:
+			q.append(node.left)
 
+		if node.right:
+			q.append(node.right)
