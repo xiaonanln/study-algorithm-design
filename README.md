@@ -1,5 +1,5 @@
 # study-the-algorithm-design-manual
-Write code to study 《The Algorithm Design Manual》
+Write **python** code to study 《The Algorithm Design Manual》
 
 
 # Data structures to be implemented
@@ -20,8 +20,15 @@ Write code to study 《The Algorithm Design Manual》
 
 ## Graph
 
-- [ ] DFS
+- [x] DFS
 - [x] BFS
 - [ ] DFS Path
 - [ ] BFS Path
+- [ ] DFS on DGraph
 - [ ] Connected Components
+- [ ] Two Color (bipartite)
+- [ ] Finding Cycles
+- [ ] Articulation Vertices
+- [ ] Topological Sorting 
+- [ ] Strongly Connected Components
+- [ ] Union Find

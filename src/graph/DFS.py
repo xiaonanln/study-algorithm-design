@@ -1,32 +1,25 @@
 from collections import deque
 
-class BFS(object):
+class DFS(object):
 	def __init__(self, graph):
 		self.g = graph
 		self.parent = [-1] * graph.V
 		self.marked = [False] * graph.V
 		self.visited = [False] * graph.V
-		self.q = deque()
 
-	def bfs(self, s):
-		q, g, marked, visited = self.q, self.g, self.marked, self.visited
+	def dfs(self, u):
+		self.marked[u] = True
+		self.visitVertex(u)
 
-		q.append(s)
-		marked[s] = True
+		for v in self.g.adj[u]:
+			if not self.marked[v]:
+				self.parent[v] = u
+				self.visitEdge(u, v)
+				self.dfs(v)
+			elif not self.visited[v] or self.g.directed:
+				self.visitEdge(u, v)
 
-		while q:
-			u = q.popleft()
-			self.visitVertex(u)
-			visited[u] = True
-
-			for v in g.adj[u]:
-				if not visited[v] or g.directed:
-					self.visitEdge(u, v)
-
-				if not marked[v]:
-					self.parent[v] = u
-					marked[v] = True
-					q.append(v)
+		self.visited[u] = True
 
 	def visitVertex(self, v):
 		pass
@@ -58,12 +51,11 @@ if __name__ == '__main__':
 	g.addEdge(1, 3)
 
 	l = []
-	bfs = BFS(g)
-	bfs.bfs(0)
-	bfs.bfs(2)
+	dfs = DFS(g)
+	dfs.dfs(0)
 	print l
-	print bfs.hasPathTo(3), bfs.hasPathTo(2)
-	print bfs.getPath(3)
-	print bfs.getPath(0)
-	print bfs.getPath(2)
+	print dfs.hasPathTo(3), dfs.hasPathTo(2)
+	print dfs.getPath(3)
+	print dfs.getPath(0)
+	print dfs.getPath(2)
 
