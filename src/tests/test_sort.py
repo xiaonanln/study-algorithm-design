@@ -1,16 +1,17 @@
 import random
 import time
-import timeit
 import unittest
 
-from ch2.InsertionSort import InsertionSort
-from ch2.SelectionSort import SelectionSort
-from ch4.HeapSort import HeapSort
-from ch4.MergeSort import MergeSort
-from ch4.QuickSort import QuickSort
-from ch4.QuickSortW3 import QuickSortW3
-from ch4.ShellSort import ShellSort
-from ch4.RadixSortLSD import RadixSortLSD
+from sorting.InsertionSort import InsertionSort
+from sorting.HeapSort import HeapSort
+from sorting.QuickSort import QuickSort
+from sorting.QuickSortW3 import QuickSortW3
+from sorting.RadixSortLSD import RadixSortLSD
+from sorting.ShellSort import ShellSort
+
+from sorting.MergeSort import MergeSort
+from sorting.SelectionSort import SelectionSort
+
 
 class TestSort(unittest.TestCase):
 	def testInsertionSort(self):

@@ -1,9 +1,9 @@
-from ch3 import BinaryTree
+from tree import BinaryTree
 
 import unittest
 import random
 import sys
-from ch4 import Heap
+from heap import Heap
 
 class TestHeap(unittest.TestCase):
 	def testHeap(self):

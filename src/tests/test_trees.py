@@ -1,4 +1,4 @@
-from ch3 import BinaryTree
+from tree import BinaryTree
 
 import unittest
 import random
