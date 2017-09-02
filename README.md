@@ -20,5 +20,5 @@ Write code to study 《The Algorithm Design Manual》
 
 ## Graph
 
-- [ ]DFS
-- [ ]BFS
+- [ ] DFS
+- [ ] BFS
