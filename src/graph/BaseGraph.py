@@ -10,49 +10,64 @@ class BaseGraph(object):
         self.adj = [deque() for _ in xrange(V)]
         self.E = 0
 
-    def BFS(self, f):
+    def BFS(self, s, f):
         visited = [False for _ in xrange(self.V)]
         q = deque()
+        q.append(s)
+        visited[s] = 1
 
-        def bfs(u):
-            if visited[u]:
-                return
+        while q:
+            u = q.popleft()
+            f(u)
 
-            q.append(u)
-            visited[u] = True
+            for v in self.adj[u]:
+                if not visited[v]:
+                    visited[v] = True
+                    q.append(v)
 
-            while q:
-                u = q.popleft()
-                f(u)
+                # def BFS(self, f):
+    #     visited = [False for _ in xrange(self.V)]
+    #     q = deque()
+    #
+    #     def bfs(u):
+    #         if visited[u]:
+    #             return
+    #
+    #         q.append(u)
+    #         visited[u] = True
+    #
+    #         while q:
+    #             u = q.popleft()
+    #             f(u)
+    #
+    #             for v in self.adj[u]:
+    #                 if not visited[v]:
+    #                     visited[v] = True
+    #                     q.append(v)
+    #
+    #     for u in xrange(self.V):
+    #         bfs(u)
 
-                for v in self.adj[u]:
-                    if not visited[v]:
-                        visited[v] = True
-                        q.append(v)
-
-        for u in xrange(self.V):
-            bfs(u)
-
-    def DFS(self, f):
-        visited = [False for _ in xrange(self.V)]
-        q = deque()
-
-        def dfs(u):
-            if visited[u]:
-                return
-
-            q.append(u)
-            visited[u] = True
-
-            while q:
-                u = q.popleft()
-                f(u)
-
-                for v in self.adj[u]:
-                    if not visited[v]:
-                        visited[v] = True
-                        q.append(v)
-
-        for u in xrange(self.V):
-            dfs(u)
-
+    # def DFS(self, f):
+    #     visited = [False for _ in xrange(self.V)]
+    #     q = deque()
+    #
+    #     def dfs(u):
+    #         if visited[u]:
+    #             return
+    #
+    #         q.append(u)
+    #         visited[u] = True
+    #
+    #         while q:
+    #             u = q.popleft()
+    #             f(u)
+    #
+    #             for v in self.adj[u]:
+    #                 if not visited[v]:
+    #                     visited[v] = True
+    #                     q.append(v)
+    #
+    #     for u in xrange(self.V):
+    #         dfs(u)
+    #

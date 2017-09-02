@@ -13,8 +13,9 @@ class Graph(BaseGraph):
 if __name__ == '__main__':
     g = Graph(5)
     g.addEdge(0, 4)
+    g.addEdge(0, 1)
     g.addEdge(1, 3)
 
     l = []
-    g.BFS(lambda v: l.append(v))
+    g.BFS(0, lambda v: l.append(v))
     print l
