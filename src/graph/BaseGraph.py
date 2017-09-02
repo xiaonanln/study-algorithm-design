@@ -10,21 +10,6 @@ class BaseGraph(object):
         self.adj = [deque() for _ in xrange(V)]
         self.E = 0
 
-    def BFS(self, s, f):
-        visited = [False for _ in xrange(self.V)]
-        q = deque()
-        q.append(s)
-        visited[s] = 1
-
-        while q:
-            u = q.popleft()
-            f(u)
-
-            for v in self.adj[u]:
-                if not visited[v]:
-                    visited[v] = True
-                    q.append(v)
-
                 # def BFS(self, f):
     #     visited = [False for _ in xrange(self.V)]
     #     q = deque()
