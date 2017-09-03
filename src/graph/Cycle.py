@@ -1,16 +1,14 @@
 
 from DFS import DFS
 
-class CheckCycle(DFS):
+class Cycle(DFS):
 
 	def __init__(self, g):
-		super(CheckCycle, self).__init__(g)
+		assert not g.directed, 'not work for digraph'
+		super(Cycle, self).__init__(g)
 		self.hasCycle = False
 
-	def checkcycle(self):
-		for v in xrange(g.V):
-			if not self.finished and not self.marked[v]:
-				self.dfs(v)
+	run = DFS.dfsall
 
 	def dfs(self, u):
 		self.marked[u] = True
@@ -29,13 +27,11 @@ class CheckCycle(DFS):
 
 if __name__ == '__main__':
 	from Graph import Graph
-	g = Graph(5, directed=True)
+	g = Graph(3)
 	g.addEdge(0, 1)
 	g.addEdge(0, 2)
-	g.addEdge(2, 3)
-
-	g.addEdge(3, 0)
+	g.addEdge(2, 1)
 	# g.addEdge()
-	hc = CheckCycle(g)
-	hc.checkcycle()
+	hc = Cycle(g)
+	hc.run()
 	print hc.hasCycle

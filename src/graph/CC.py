@@ -8,7 +8,7 @@ class CC(BFS):
 		self.id = [-1] * g.V
 		self.count = 0
 
-	def cc(self):
+	def run(self):
 		for v in xrange(g.V):
 			if not self.marked[v]:
 				self.bfs(v)
@@ -28,7 +28,7 @@ if __name__ == '__main__':
 	g.addEdge(0, 2)
 	g.addEdge(3, 4)
 	cc = CC(g)
-	cc.cc()
+	cc.run()
 	print cc.count
 	print cc.id
 	print cc.connected(0, 3)

@@ -25,6 +25,11 @@ class DFS(object):
 
 		self.visited[u] = True
 
+	def dfsall(self):
+		for v in xrange(self.g.V):
+			if not self.finished and not self.marked[v]:
+				self.dfs(v)
+
 	def visitVertex(self, v):
 		pass
 

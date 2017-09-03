@@ -28,6 +28,11 @@ class BFS(object):
 					marked[v] = True
 					q.append(v)
 
+	def bfsall(self):
+		for v in xrange(self.g.V):
+			if not self.marked[v]:
+				self.bfs(v)
+
 	def visitVertex(self, v):
 		pass
 
