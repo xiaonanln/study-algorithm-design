@@ -6,12 +6,16 @@ class DFS(object):
 		self.parent = [-1] * graph.V
 		self.marked = [False] * graph.V
 		self.visited = [False] * graph.V
+		self.finished = False
 
 	def dfs(self, u):
 		self.marked[u] = True
 		self.visitVertex(u)
 
 		for v in self.g.adj[u]:
+			if self.finished:
+				return
+
 			if not self.marked[v]:
 				self.parent[v] = u
 				self.visitEdge(u, v)
