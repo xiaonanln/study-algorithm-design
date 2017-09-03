@@ -28,6 +28,8 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [ ] Articulation Vertices
 - [x] Digraph DFS Orders (pre & post & reversePost)
 - [x] Topological Sorting
-- [ ] Strongly Connected 
-- [ ] Strongly Connected Components
+- [x] Strongly Connected Components
+- [ ] Minimal Spanning Tree
+    - [ ] Prim's Algorithm
+    - [ ] Kruskal's Algorithm 
 - [ ] Union Find
