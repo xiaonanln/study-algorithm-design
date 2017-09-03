@@ -13,18 +13,28 @@ class CheckCycle(DFS):
 				self.dfs(v)
 
 	def visitEdge(self, u, v):
-		print 'visitEdge', u, v
-		print u, v, self.parent[v]
-		if self.parent[v] != u:
-			self.hasCycle = True
+		print u, '->', v
+
+	# def dfs(self, u):
+	# 	self.marked[u] = True
+	#
+	# 	for v in self.g.adj[u]:
+	# 		if not self.marked[v]:
+	# 			self.parent[v] = u
+	# 			self.dfs(v)
+	# 		elif self.parent[u] != v:
+	# 			self.hasCycle = True
+	#
+	# 	self.visited[u] = True
 
 if __name__ == '__main__':
 	from Graph import Graph
 	g = Graph(5)
 	g.addEdge(0, 1)
-	g.addEdge(1, 2)
-	g.addEdge(3, 4)
-	g.addEdge(2, 0)
+	g.addEdge(0, 2)
+	g.addEdge(2, 3)
+
+	g.addEdge(3, 0)
 	hc = CheckCycle(g)
 	hc.checkcycle()
 	print hc.hasCycle

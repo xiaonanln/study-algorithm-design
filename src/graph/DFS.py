@@ -16,7 +16,7 @@ class DFS(object):
 				self.parent[v] = u
 				self.visitEdge(u, v)
 				self.dfs(v)
-			elif not self.visited[v] or self.g.directed:
+			elif (not self.visited[v] and self.parent[u] != v) or self.g.directed:
 				self.visitEdge(u, v)
 
 		self.visited[u] = True
