@@ -15,3 +15,11 @@ class Graph(object):
         self.adj[v1].append(v2)
         if not self.directed:
             self.adj[v2].append(v1)
+
+    def __reversed__(self):
+        g = Graph(self.V, directed=self.directed)
+        for u in xrange(self.V):
+            for v in self.adj[u]: # edge u -> v
+                g.addEdge(v, u)
+
+        return g

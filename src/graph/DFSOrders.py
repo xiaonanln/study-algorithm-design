@@ -4,6 +4,7 @@ from DFS import DFS
 class DFSOrders(DFS):
 
 	def __init__(self, graph):
+		assert graph.directed, "must be digraph"
 		super(DFSOrders, self).__init__(graph)
 		self.preOrder = []
 		self.postOrder = []

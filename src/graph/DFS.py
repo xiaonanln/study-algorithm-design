@@ -5,7 +5,6 @@ class DFS(object):
 		self.g = graph
 		self.parent = [-1] * graph.V
 		self.marked = [False] * graph.V
-		self.visited = [False] * graph.V
 		self.finished = False
 
 	def dfs(self, u):
@@ -17,12 +16,7 @@ class DFS(object):
 
 			if not self.marked[v]:
 				self.parent[v] = u
-				self.visitEdge(u, v)
 				self.dfs(v)
-			elif (not self.visited[v] and self.parent[u] != v) or self.g.directed:
-				self.visitEdge(u, v)
-
-		self.visited[u] = True
 
 	def dfsall(self):
 		for v in xrange(self.g.V):

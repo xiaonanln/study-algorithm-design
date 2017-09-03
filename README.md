@@ -26,7 +26,8 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [x] Two Color (bipartite)
 - [x] Finding Cycles (graph & digraph)
 - [ ] Articulation Vertices
-- [ ] Digraph DFS Orders (pre & post & reversePost)
-- [ ] Topological Sorting 
+- [x] Digraph DFS Orders (pre & post & reversePost)
+- [x] Topological Sorting
+- [ ] Strongly Connected 
 - [ ] Strongly Connected Components
 - [ ] Union Find
