@@ -16,13 +16,9 @@ class BFS(object):
 
 		while q:
 			u = q.popleft()
-			self.visitVertex(u)
 			visited[u] = True
 
 			for v in g.adj[u]:
-				if not visited[v] or g.directed:
-					self.visitEdge(u, v)
-
 				if not marked[v]:
 					self.parent[v] = u
 					marked[v] = True
@@ -32,12 +28,6 @@ class BFS(object):
 		for v in xrange(self.g.V):
 			if not self.marked[v]:
 				self.bfs(v)
-
-	def visitVertex(self, v):
-		pass
-
-	def visitEdge(self, u, v):
-		pass
 
 	def hasPathTo(self, v):
 		return self.marked[v]

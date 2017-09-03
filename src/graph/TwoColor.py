@@ -15,7 +15,7 @@ class TwoColor(DFS):
 		self.color = [-1] * g.V
 		self.isBipartite = True
 
-	def twocolor(self):
+	def run(self):
 		for v in xrange(g.V):
 			if not self.finished and self.color[v] == -1:
 				self.dfs(v, WHITE)
@@ -41,6 +41,6 @@ if __name__ == '__main__':
 	g.addEdge(1, 2)
 	# g.addEdge()
 	tw = TwoColor(g)
-	tw.twocolor()
+	tw.run()
 	print tw.color
 	print 'isBipartite', tw.isBipartite

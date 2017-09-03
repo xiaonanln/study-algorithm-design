@@ -14,12 +14,26 @@ class CC(BFS):
 				self.bfs(v)
 				self.count += 1
 
+	def bfs(self, s):
+		q, g, marked, visited = self.q, self.g, self.marked, self.visited
+
+		q.append(s)
+		marked[s] = True
+
+		while q:
+			u = q.popleft()
+			self.id[u] = self.count
+			visited[u] = True
+
+			for v in g.adj[u]:
+				if not marked[v]:
+					self.parent[v] = u
+					marked[v] = True
+					q.append(v)
+
 	def connected(self, u, v):
 		"""check if u and v is connected"""
 		return self.id[u] == self.id[v]
-
-	def visitVertex(self, v):
-		self.id[v] = self.count
 
 if __name__ == '__main__':
 	from Graph import Graph

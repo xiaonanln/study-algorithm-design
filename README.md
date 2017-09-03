@@ -18,17 +18,15 @@ Write **python** code to study 《The Algorithm Design Manual》
 
 - [ ] Trie
 
-## Graph
+## Graph 
 
 - [x] DFS
 - [x] BFS
-- [ ] DFS Path
-- [ ] BFS Path
-- [ ] DFS on DGraph
-- [ ] Connected Components
-- [ ] Two Color (bipartite)
-- [ ] Finding Cycles
+- [x] Connected Components
+- [x] Two Color (bipartite)
+- [x] Finding Cycles (graph & digraph)
 - [ ] Articulation Vertices
+- [ ] Digraph DFS Orders (pre & post & reversePost)
 - [ ] Topological Sorting 
 - [ ] Strongly Connected Components
 - [ ] Union Find

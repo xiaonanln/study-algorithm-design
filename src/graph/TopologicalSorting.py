@@ -33,6 +33,6 @@ if __name__ == '__main__':
 	g.addEdge(1, 2)
 	# g.addEdge()
 	tw = TwoColor(g)
-	tw.twocolor()
+	tw.run()
 	print tw.color
 	print 'isBipartite', tw.isBipartite

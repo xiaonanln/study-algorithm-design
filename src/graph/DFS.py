@@ -10,7 +10,6 @@ class DFS(object):
 
 	def dfs(self, u):
 		self.marked[u] = True
-		self.visitVertex(u)
 
 		for v in self.g.adj[u]:
 			if self.finished:
@@ -29,12 +28,6 @@ class DFS(object):
 		for v in xrange(self.g.V):
 			if not self.finished and not self.marked[v]:
 				self.dfs(v)
-
-	def visitVertex(self, v):
-		pass
-
-	def visitEdge(self, u, v):
-		pass
 
 	def hasPathTo(self, v):
 		return self.marked[v]
