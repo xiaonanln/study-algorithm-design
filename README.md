@@ -14,8 +14,13 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [x] Radix Sort
 - [x] Shell Sort
 
-## Tree
+## Heap
+- [x] Heap
+- [ ] Priority Queue
 
+## Tree
+- [x] Binary Tree
+- [ ] B-Tree
 - [ ] Trie
 
 ## Graph 
@@ -31,5 +36,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [x] Strongly Connected Components
 - [ ] Minimal Spanning Tree
     - [ ] Prim's Algorithm
+    - [ ] Prim's Algorithm using Priority Queue
     - [ ] Kruskal's Algorithm 
+
 - [ ] Union Find
