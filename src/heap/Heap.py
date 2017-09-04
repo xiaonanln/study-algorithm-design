@@ -15,7 +15,7 @@ def Pop(heap):
 
 def Push(heap, val):
 	heap.append(val)
-	moveup(list, len(heap)-1)
+	moveup(heap, len(heap)-1)
 
 def moveup(list, i):
 	val = list[i]
