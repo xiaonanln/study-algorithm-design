@@ -34,7 +34,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [x] Digraph DFS Orders (pre & post & reversePost)
 - [x] Topological Sorting
 - [x] Strongly Connected Components
-- [ ] Minimal Spanning Tree
+- [x] Minimal Spanning Tree
     - [x] Prim's Algorithm
     - [x] Prim's Algorithm using Priority Queue
     - [x] Kruskal's Algorithm
@@ -42,5 +42,5 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [ ] Shortest Path
     - [ ] Dijkstra's Algorithm 
     - [ ] All-Pairs Shortest Path
-
+    
 - [x] Union Find
