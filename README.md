@@ -2,7 +2,7 @@
 Write **python** code to study 《The Algorithm Design Manual》
 
 
-# Data structures to be implemented
+# Data Structures & Algorithms
 
 ## Sorting
 - [x] Insertion Sort
@@ -39,10 +39,20 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [x] Prim's Algorithm using Priority Queue
     - [x] Kruskal's Algorithm
 
-- [ ] Shortest Path
-    - [ ] Dijkstra's Algorithm 
-    - [ ] All-Pairs Shortest Path
+- [ ] (All-Pairs) Shortest Path
+    - [x] Dijkstra's Algorithm 
+    - [ ] **Floyd's Algorithm**
     
 - [x] Union Find
     - [x] My Stupid Union Find Algorithm
     - [x] Union Find with Path Compression and Union by Rank
+- [ ] _Network Flows (**not understand yet**)_
+    
+## Backtracking
+
+- [ ] Construct All Subsets
+- [ ] Construct All Permitations
+- [ ] Construct All Paths in  a Graph (_from s to t_)
+
+
+    
