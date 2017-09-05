@@ -36,6 +36,9 @@ class PriorityQueue(object):
 	def __len__(self):
 		return len(self.heap)
 
+	def __nonzero__(self):
+		return bool(self.heap)
+
 	def peek(self):
 		return self.heap[0][1]
 

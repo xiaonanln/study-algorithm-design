@@ -1,4 +1,7 @@
 
+from heap.PriorityQueue import PriorityQueue
+
+INFINITY = float('inf')
 
 class PrimPQ(object):
 
@@ -6,7 +9,8 @@ class PrimPQ(object):
 		assert not graph.directed
 		self.g = graph
 		self.intree = [False] * graph.V
-		self.distance = [float('inf')] * graph.V
+		self.distance = [INFINITY] * graph.V
+		self.distancePQ = PriorityQueue(graph.V)
 		self.parent = [-1] * graph.V
 
 	def run(self, s):
@@ -17,16 +21,20 @@ class PrimPQ(object):
 
 			for v, w in self.g.adj[u]:
 				if not self.intree[v] and w < self.distance[v]:
+					oldDist = self.distance[v]
 					self.distance[v] = w
 					self.parent[v] = u
+					if oldDist == INFINITY:
+						self.distancePQ.push(v, -w)
+					else:
+						self.distancePQ.change(v, -w)
 
 			# find next u
-			u = -1
-			mindist = float('inf')
-			for v in xrange(self.g.V):
-				if not self.intree[v] and self.distance[v] < mindist:
-					mindist = self.distance[v]
-					u = v
+			if self.distancePQ:
+				u = self.distancePQ.pop()
+				# print 'pop', u
+			else:
+				u = -1
 
 if __name__ == '__main__':
 	from WeightedGraph import WeightedGraph
