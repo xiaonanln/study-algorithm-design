@@ -1,32 +1,26 @@
 
+import operator
+# from heap.PriorityQueue import PriorityQueue
+from unionfind.UnionFind import UnionFind
+from sorting.QuickSortW3 import QuickSortW3
 
-class Prim(object):
+class Kruskal(object):
 
 	def __init__(self, graph):
 		assert not graph.directed
 		self.g = graph
+		self.vuf = UnionFind(graph.V)
 		self.intree = [False] * graph.V
-		self.distance = [float('inf')] * graph.V
 		self.parent = [-1] * graph.V
 
 	def run(self, s):
-		u = s
-		while u != -1:
-			self.intree[u] = True
-			print '%d -> %d' % (self.parent[u], u)
+		edges = list(self.g.edges())
+		edges.sort(key=operator.itemgetter(2))
 
-			for v, w in self.g.adj[u]:
-				if not self.intree[v] and w < self.distance[v]:
-					self.distance[v] = w
-					self.parent[v] = u
-
-			# find next u
-			u = -1
-			mindist = float('inf')
-			for v in xrange(self.g.V):
-				if not self.intree[v] and self.distance[v] < mindist:
-					mindist = self.distance[v]
-					u = v
+		for u, v, w in edges:
+			if self.vuf.find(u) != self.vuf.find(v):
+				print '%d -> %d W %d' % (u, v, w)
+				self.vuf.union(u, v)
 
 if __name__ == '__main__':
 	from graph.WeightedGraph import WeightedGraph
@@ -35,7 +29,7 @@ if __name__ == '__main__':
 	g.addEdge(0, 2, 2)
 	g.addEdge(2, 3, 3)
 	g.addEdge(2, 4, 1)
-	g.addEdge(0, 4, 3)
-	g.addEdge(3, 4, 4)
-	prim = Prim(g)
+	# g.addEdge(0, 4, 3)
+	# g.addEdge(3, 4, 4)
+	prim = Kruskal(g)
 	prim.run(0)

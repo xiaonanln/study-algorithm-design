@@ -16,6 +16,17 @@ class Graph(object):
         if not self.directed:
             self.adj[v2].append(v1)
 
+    def edges(self):
+        if self.directed:
+            for u, adj in enumerate(self.adj):
+                for v in adj:
+                    yield (u, v)
+        else:
+            for u, adj in enumerate(self.adj):
+                for v in adj:
+                    if v > u: break
+                    yield (u, v)
+
     def __reversed__(self):
         g = Graph(self.V, directed=self.directed)
         for u in xrange(self.V):

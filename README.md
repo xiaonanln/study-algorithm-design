@@ -35,11 +35,12 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [x] Topological Sorting
 - [x] Strongly Connected Components
 - [ ] Minimal Spanning Tree
-    - [ ] Prim's Algorithm
-    - [ ] Prim's Algorithm using Priority Queue
+    - [x] Prim's Algorithm
+    - [x] Prim's Algorithm using Priority Queue
     - [ ] Kruskal's Algorithm 
 
 - [ ] Shortest Path
     - [ ] Dijkstra's Algorithm 
     - [ ] All-Pairs Shortest Path
-- [ ] Union Find
+
+- [x] Union Find

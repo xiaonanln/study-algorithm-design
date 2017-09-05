@@ -16,6 +16,17 @@ class WeightedGraph(object):
         if not self.directed:
             self.adj[v2].append( (v1, w) )
 
+    def edges(self):
+        if self.directed:
+            for u, adj in enumerate(self.adj):
+                for v, w in adj:
+                    yield (u, v, w)
+        else:
+            for u, adj in enumerate(self.adj):
+                for v, w in adj:
+                    if v > u: break
+                    yield (u, v, w)
+
     def __reversed__(self):
         g = WeightedGraph(self.V, directed=self.directed)
         for u in xrange(self.V):
