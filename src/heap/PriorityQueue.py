@@ -30,6 +30,12 @@ class PriorityQueue(object):
 
 		return n
 
+	def __contains__(self, n):
+		return self.idx[n] != -1
+
+	def __len__(self):
+		return len(self.heap)
+
 	def peek(self):
 		return self.heap[0][1]
 
@@ -89,7 +95,6 @@ if __name__ == '__main__':
 	assert pq.pop() == 1
 	assert pq.pop() == 0
 
-
 	pq.push(0, 100)
 	pq.push(1, 200)
 	pq.push(2, 300)
@@ -97,3 +102,19 @@ if __name__ == '__main__':
 	assert pq.pop() == 2
 	assert pq.pop() == 0
 	assert pq.pop() == 1
+
+	import random
+	pq = PriorityQueue(100)
+	# inpq = {}
+	for i in xrange(100000):
+		if len(pq) == 0 or random.random() < 0.7:
+			n = random.randint(0, 99)
+			prio = random.randint(1, 10000)
+			if n in pq:
+				pq.change(n, prio)
+			else:
+				pq.push(n, prio)
+
+		else:
+			n = pq.pop()
+
