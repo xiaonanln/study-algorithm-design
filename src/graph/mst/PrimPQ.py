@@ -37,7 +37,7 @@ class PrimPQ(object):
 				u = -1
 
 if __name__ == '__main__':
-	from WeightedGraph import WeightedGraph
+	from graph.WeightedGraph import WeightedGraph
 	g = WeightedGraph(5)
 	g.addEdge(0, 1, 1)
 	g.addEdge(0, 2, 2)
