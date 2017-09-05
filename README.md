@@ -44,3 +44,5 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [ ] All-Pairs Shortest Path
     
 - [x] Union Find
+    - [x] My Stupid Union Find Algorithm
+    - [x] Union Find with Path Compression and Union by Rank
