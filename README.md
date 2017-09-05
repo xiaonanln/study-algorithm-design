@@ -37,7 +37,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [ ] Minimal Spanning Tree
     - [x] Prim's Algorithm
     - [x] Prim's Algorithm using Priority Queue
-    - [ ] Kruskal's Algorithm 
+    - [x] Kruskal's Algorithm
 
 - [ ] Shortest Path
     - [ ] Dijkstra's Algorithm 
