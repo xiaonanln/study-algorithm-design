@@ -51,7 +51,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 ## Backtracking
 
 - [x] Construct All Subsets
-- [ ] Construct All Permutations
+- [x] Construct All Permutations
 - [ ] Construct All Paths in  a Graph (_from s to t_)
 - [ ] Solve Sudoku (find one in leetcode)
 
