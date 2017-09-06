@@ -6,19 +6,40 @@ class AllPermutations(object):
 
 	def run(self, m):
 		print 'Calculating P(%d,%d): ' % (self.N, m)
-		for x in itertools.per
+
+		sol = [-1] * m
+		used = [False] * self.N
 
 		def bt(i):
-			if i == self.N:
-				print [n for n, nin in enumerate(inset) if nin]
+			if i >= m:
+				print tuple(sol)
 				return
 
-			inset[i] = True
-			bt(i+1)
-			inset[i] = False
-			bt(i+1)
+			for n, _used in enumerate(used):
+				if not _used:
+					used[n] = True
+					sol[i] = n
+
+					bt(i+1)
+
+					used[n] = False
 
 		bt(0)
+
+		# for x in itertools.permutations(range(self.N), m):
+		# 	print x
+		#
+		# def bt(i):
+		# 	if i == self.N:
+		# 		print [n for n, nin in enumerate(inset) if nin]
+		# 		return
+		#
+		# 	inset[i] = True
+		# 	bt(i+1)
+		# 	inset[i] = False
+		# 	bt(i+1)
+		#
+		# bt(0)
 
 if __name__ == '__main__':
 	AllPermutations(4).run(0)

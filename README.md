@@ -21,7 +21,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 ## Tree
 - [x] Binary Tree
 - [ ] B-Tree
-- [ ] Trie
+- [x] Trie
 
 ## Graph 
 
@@ -50,9 +50,10 @@ Write **python** code to study 《The Algorithm Design Manual》
     
 ## Backtracking
 
-- [ ] Construct All Subsets
+- [x] Construct All Subsets
 - [ ] Construct All Permutations
 - [ ] Construct All Paths in  a Graph (_from s to t_)
+- [ ] Solve Sudoku (find one in leetcode)
 
 
     
