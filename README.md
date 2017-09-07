@@ -52,7 +52,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 
 - [x] Construct All Subsets
 - [x] Construct All Permutations
-- [ ] Construct All Paths in  a Graph (_from s to t_)
+- [x] Construct All Paths in  a Graph (_from s to t_)
 - [ ] Solve Sudoku (find one in leetcode)
 
 
