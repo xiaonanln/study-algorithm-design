@@ -16,7 +16,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 
 ## Heap
 - [x] Heap
-- [ ] Priority Queue
+- [x] Priority Queue
 
 ## Tree
 - [x] Binary Tree
@@ -39,9 +39,9 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [x] Prim's Algorithm using Priority Queue
     - [x] Kruskal's Algorithm
 
-- [ ] (All-Pairs) Shortest Path
+- [x] (All-Pairs) Shortest Path
     - [x] Dijkstra's Algorithm 
-    - [ ] **Floyd's Algorithm**
+    - [x] **Floyd's Algorithm**
     
 - [x] Union Find
     - [x] My Stupid Union Find Algorithm
@@ -58,8 +58,11 @@ Write **python** code to study 《The Algorithm Design Manual》
 ## Dynamic Programming
 
 - [x] Floyd's Algorithm
-- [ ] Edit Distance
-- [ ] Longest Increasing
-- [ ] Longest Common Subsequence
-- [ ] 0-1 Knapsack Problem
+- [ ] [Tushar Roy's Playlist](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
+    - [ ] 0-1 Knapsack Problem
+    - [ ] Longest Common Subsequence (return length or subsequence)
+    - [ ] Matrix Chain Multiplication
+    - [ ] Subset Sum Problem
+    - [ ] Edit Distance
+    - [ ] Longest Increasing
     
