@@ -55,5 +55,11 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [x] Construct All Paths in  a Graph (_from s to t_)
 - [ ] Solve Sudoku (find one in leetcode)
 
+## Dynamic Programming
 
+- [x] Floyd's Algorithm
+- [ ] Edit Distance
+- [ ] Longest Increasing
+- [ ] Longest Common Subsequence
+- [ ] 0-1 Knapsack Problem
     
