@@ -61,8 +61,8 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [ ] [Tushar Roy's Playlist On Dynamic Programming](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
     - [x] 0-1 Knapsack Problem
     - [x] Longest Common Subsequence (return length or subsequence)
-    - [ ] Matrix Chain Multiplication
-    - [ ] Subset Sum Problem
+    - [x] Matrix Chain Multiplication
+    - [x] Subset Sum Problem
     - [ ] Optimal Binary Search Tree
     
 - [ ] Edit Distance
