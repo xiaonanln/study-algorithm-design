@@ -58,6 +58,9 @@ Write **python** code to study 《The Algorithm Design Manual》
 ## Dynamic Programming
 
 - [x] Floyd's Algorithm
+- [ ] Binomial Coefficients
+- [ ] Edit Distance
+
 - [ ] [Tushar Roy's Playlist On Dynamic Programming](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
     - [x] 0-1 Knapsack Problem
     - [x] Longest Common Subsequence (return length or subsequence)
@@ -65,6 +68,5 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [x] Subset Sum Problem
     - [ ] Optimal Binary Search Tree
     
-- [ ] Edit Distance
 - [ ] Longest Increasing
     
