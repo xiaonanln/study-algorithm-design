@@ -59,8 +59,8 @@ Write **python** code to study 《The Algorithm Design Manual》
 
 - [x] Floyd's Algorithm
 - [ ] [Tushar Roy's Playlist On Dynamic Programming](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
-    - [ ] 0-1 Knapsack Problem
-    - [ ] Longest Common Subsequence (return length or subsequence)
+    - [x] 0-1 Knapsack Problem
+    - [x] Longest Common Subsequence (return length or subsequence)
     - [ ] Matrix Chain Multiplication
     - [ ] Subset Sum Problem
     - [ ] Optimal Binary Search Tree
