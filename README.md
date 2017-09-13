@@ -66,7 +66,7 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [x] Longest Common Subsequence (return length or subsequence)
     - [x] Matrix Chain Multiplication
     - [x] Subset Sum Problem
-    - [ ] Optimal Binary Search Tree
+    - [x] Optimal Binary Search Tree
     
 - [ ] Longest Increasing
     
