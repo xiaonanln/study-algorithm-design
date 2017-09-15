@@ -60,7 +60,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [x] Floyd's Algorithm
 - [ ] Binomial Coefficients
 - [ ] Edit Distance
-
+- [ ] Maximum Monotone Subsequence
 - [ ] [Tushar Roy's Playlist On Dynamic Programming](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
     - [x] 0-1 Knapsack Problem
     - [x] Longest Common Subsequence (return length or subsequence)
@@ -68,5 +68,19 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [x] Subset Sum Problem
     - [ ] Optimal Binary Search Tree
     
-- [ ] Longest Increasing
-    
+- [ ] Longest Increasing Subsequence
+- [ ] Integer Partition problem (P.294 not read yet)
+
+## Data Structures
+- [ ] B-Tree (P.370)
+- [ ] Skip List (P.371)
+- [ ] Suffix Tree (P.377)
+- [ ] Bloom Filter (P.386)
+- [ ] Kd-Trees (P.389)
+    - [ ] Quadtree or Octtree 
+    - [ ] BSP-tree
+    - [ ] R-tree
+
+
+
+ 
