@@ -22,6 +22,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [x] Binary Tree
 - [ ] B-Tree
 - [x] Trie
+- [ ] Binary Indexed Tree
 
 ## Graph 
 
