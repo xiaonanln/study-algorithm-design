@@ -94,5 +94,5 @@ Write **python** code to study 《The Algorithm Design Manual》
 
 ## Classic Leetcode Problems
 - [ ] [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)  
-
+- [ ] [677. Map Sum Pairs (Trie)](https://leetcode.com/problems/map-sum-pairs/description/)
  
