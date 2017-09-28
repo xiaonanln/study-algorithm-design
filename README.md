@@ -64,7 +64,7 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [ ] Maximum Monotone Subsequence
 - [ ] Longest Increasing Subsequence
 - [ ] Integer Partition problem (P.294 not read yet)
-- [ ] [背包九讲V2](https://github.com/tianyicui/pack/raw/master/V2.pdf)
+- [x] [背包九讲V2](https://github.com/tianyicui/pack/raw/master/V2.pdf)
 
 
 - [ ] [Tushar Roy's Playlist On Dynamic Programming](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
