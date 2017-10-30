@@ -62,6 +62,11 @@ Write **python** code to study 《The Algorithm Design Manual》
 - [ ] Binomial Coefficients
 - [ ] Edit Distance
 - [ ] Maximum Monotone Subsequence
+- [ ] Longest Increasing Subsequence
+- [ ] Integer Partition problem (P.294 not read yet)
+- [x] [背包九讲V2](https://github.com/tianyicui/pack/raw/master/V2.pdf)
+
+
 - [ ] [Tushar Roy's Playlist On Dynamic Programming](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
     - [x] [0-1 Knapsack Problem](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr&index=1)
     - [x] [Longest Common Subsequence](https://www.youtube.com/watch?v=NnD96abizww&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr&index=2)
@@ -78,8 +83,6 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [ ] [Cutting Rod](https://www.youtube.com/watch?v=IRwVmTmN6go&index=14&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
     
     
-- [ ] Longest Increasing Subsequence
-- [ ] Integer Partition problem (P.294 not read yet)
 
 ## Data Structures
 - [ ] B-Tree (P.370)
