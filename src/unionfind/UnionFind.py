@@ -27,3 +27,6 @@ class UnionFind(object):
 		# else:
 		# 	self.sets[sy] = sx
 		# 	self.rank[sx] = rx + 1
+
+	def connected(self, x, y):
+		return self.find(x) == self.find(y)
