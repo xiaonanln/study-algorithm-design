@@ -82,7 +82,8 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [ ] [Egg Dropping](https://www.youtube.com/watch?v=3hcaVyX00_4&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr&index=13)
     - [ ] [Cutting Rod](https://www.youtube.com/watch?v=IRwVmTmN6go&index=14&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
     
-    
+## Stable Maching
+- [ ] Gale-Shapley
 
 ## Data Structures
 - [ ] B-Tree (P.370)
