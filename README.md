@@ -82,8 +82,13 @@ Write **python** code to study 《The Algorithm Design Manual》
     - [ ] [Egg Dropping](https://www.youtube.com/watch?v=3hcaVyX00_4&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr&index=13)
     - [ ] [Cutting Rod](https://www.youtube.com/watch?v=IRwVmTmN6go&index=14&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
     
-## Stable Maching
-- [ ] Gale-Shapley
+## Algorith Design by Jon Kleinberg, Eva Trados
+- [ ] 1.1 Gale-Shapley
+- [ ] 4.1 Internal Scheduling
+- [ ] 4.8 Huffman Codes (Greedy Algorithm)
+- [ ] 4.9 Minimum-Cost Arborescences (Greedy Algorithm)
+- [ ] 5.3 Counting Inversions (Divide and Conquer) 
+- [ ] 5.4 Finding the Closest Pair of Points (Divide and Conquer) 
 
 ## Data Structures
 - [ ] B-Tree (P.370)
